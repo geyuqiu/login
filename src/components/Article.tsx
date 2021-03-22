@@ -24,7 +24,11 @@ function Article() {
 				</div>
 				<div className="row justify-content-center">
 					<div className="col-6">
-						<input placeholder="Email address"/>
+						<fieldset>
+							<legend>Email address</legend>
+							{/*<input placeholder="Email address"/>*/}
+							<input/>
+						</fieldset>
 					</div>
 				</div>
 				<div className="row justify-content-center">
