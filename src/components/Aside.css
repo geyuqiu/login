@@ -1,0 +1,15 @@
+aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.text-align-start {
+	text-align: start;
+	padding: 20px 100px;
+}
