@@ -39,7 +39,7 @@ function Article() {
 				<Password/>
 				<div className="row justify-content-center">
 					<div className="col-6">
-						<button className="margin-top-20px width-100-percent">Next</button>
+						<button className="margin-top-20px width-100-percent btn btn-primary" type="button">Next</button>
 					</div>
 				</div>
 				<div className="row justify-content-center">
