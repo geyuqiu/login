@@ -1,14 +1,17 @@
 main {
-	display: flex;
 	height: 100%;
-	/*flex-wrap: wrap;*/
 }
 
-article {
+.flex {
+	display: flex;
+	height: 100%;
+}
+
+.flex-75-percent {
 	flex: 75%;
 }
 
-aside {
+.flex-25-percent {
 	flex: 25%;
 	background: dodgerblue;
 	color: white;
