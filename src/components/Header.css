@@ -1,0 +1,28 @@
+.text-align-right {
+	text-align: right;
+}
+
+.padding-20-px {
+	padding: 20px;
+}
+
+.padding-right-48px {
+	padding-right: 48px;
+}
+
+.dot {
+	height: 8px;
+	width: 8px;
+	background-color: lightgray;
+	margin-left: 9px;
+	border-radius: 100%;
+	display: inline-block;
+}
+
+.background-color-black {
+	background-color: black;
+}
+
+.font-weight-bolder {
+	font-weight: bolder;
+}

@@ -1,17 +1,12 @@
 import React from 'react';
 import './Article.css'
+import Header from './Header';
 
 function Article() {
 	return (
 		<article>
-			<header className="text-align-right padding-20-px">
-				<p className="font-weight-bolder">
-					Step 1 of 3
-					<span className="dot background-color-black"></span>
-					<span className="dot"></span>
-					<span className="dot"></span>
-				</p>
-			</header>
+			<Header/>
+
 			<h2>Let's set up your account</h2>
 			<p>Already have an account?&nbsp;
 				<a href="">Sign in</a>
