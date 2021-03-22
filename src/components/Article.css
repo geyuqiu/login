@@ -7,6 +7,11 @@ input, select, button{
 	margin-bottom: 5px;
 }
 
+.margin-bottom-30px {
+	margin-bottom: 30px !important;
+}
+
+
 .margin-top-20px {
 	margin-top: 20px;
 }
@@ -17,6 +22,10 @@ input, button {
 
 small {
 	margin-top: -10px;
+}
+
+.gray {
+	color: gray;
 }
 
 select {
@@ -38,7 +47,7 @@ option {
 
 @-moz-document url-prefix() {
 	select {
-		text-indent: 12px;
+		text-indent: 7px;
 		padding-right: 25px;
 		background-image: url("data:image/svg+xml,\
       <svg version='1.1' xmlns='http://www.w3.org/2000/svg' width='14px'\

@@ -10,8 +10,8 @@ function Article() {
 			<div className="container-fluid">
 				<div className="row justify-content-center">
 					<div className="col-6">
-						<h2>Let's set up your account</h2>
-						<p>Already have an account?&nbsp;
+						<h2 className="margin-bottom-30px">Let's set up your account</h2>
+						<p className="margin-bottom-30px">Already have an account?&nbsp;
 							<a href="">Sign in</a>
 						</p>
 					</div>
@@ -38,7 +38,7 @@ function Article() {
 				<div className="row justify-content-center">
 					<div className="col-6">
 						<input placeholder="Password" type="password" className="margin-bottom-5px"/>
-						<small>Minimum 8 characters</small>
+						<small className="gray">Minimum 8 characters</small>
 					</div>
 				</div>
 				<div className="row justify-content-center">
