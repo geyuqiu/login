@@ -13,7 +13,7 @@ function Input(props: any) {
 				{focus
 					? <fieldset>
 						<legend>{props.legend}</legend>
-						<input autoFocus/>
+						<input autoFocus onBlur={toggleFocus}/>
 					</fieldset>
 					: <input placeholder={props.legend} onFocus={toggleFocus}/>
 				}
