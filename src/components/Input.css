@@ -13,11 +13,13 @@ fieldset {
 	padding: 5px;
 	margin-bottom: 30px;
 	border-radius: 7px;
-	height: 85px;
+	height: 61px;
 }
 
 fieldset input {
 	border: none;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 }
 
 fieldset input:focus {
