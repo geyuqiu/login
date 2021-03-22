@@ -4,6 +4,7 @@ import Header from './Header';
 import Password from './Password';
 import Input from './input';
 
+const emailAddressLegend = 'Email address';
 function Article() {
 	return (
 		<article>
@@ -23,7 +24,7 @@ function Article() {
 						<input placeholder="Your name"/>
 					</div>
 				</div>
-				<Input/>
+				<Input legend={emailAddressLegend}/>
 				<div className="row justify-content-center">
 					<div className="col-6">
 						<select required>

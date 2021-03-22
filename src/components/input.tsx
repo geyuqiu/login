@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Input.css'
 
-function Input() {
+function Input(props: any) {
 	const [focus, onFocus] = useState(false);
 	const toggleFocus = () => {
 		onFocus(focus ? false : true);
@@ -12,10 +12,10 @@ function Input() {
 			<div className="col-6">
 				{focus
 					? <fieldset>
-						<legend>Email address</legend>
+						<legend>{props.legend}</legend>
 						<input autoFocus/>
 					</fieldset>
-					: <input placeholder="Email address" onFocus={toggleFocus}/>
+					: <input placeholder={props.legend} onFocus={toggleFocus}/>
 				}
 			</div>
 		</div>
