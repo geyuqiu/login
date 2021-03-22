@@ -2,6 +2,7 @@ import React from 'react';
 import './Article.css'
 import Header from './Header';
 import Password from './Password';
+import Input from './input';
 
 function Article() {
 	return (
@@ -22,15 +23,7 @@ function Article() {
 						<input placeholder="Your name"/>
 					</div>
 				</div>
-				<div className="row justify-content-center">
-					<div className="col-6">
-						<fieldset>
-							<legend>Email address</legend>
-							{/*<input placeholder="Email address"/>*/}
-							<input/>
-						</fieldset>
-					</div>
-				</div>
+				<Input/>
 				<div className="row justify-content-center">
 					<div className="col-6">
 						<select required>

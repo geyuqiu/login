@@ -52,29 +52,3 @@ select {
 	-moz-appearance: none;
 }
 
-legend {
-	display: block;
-	width: auto;
-	margin: 0 9px;
-	padding: 0 4px;
-	font-size: inherit;
-	line-height: inherit;
-	color: gray;
-}
-
-fieldset {
-	border: 1px solid lightgray;
-	padding: 5px;
-	margin-bottom: 30px;
-	border-radius: 7px;
-	height: 85px;
-}
-
-fieldset input {
-	border: none;
-}
-
-fieldset input:focus {
-	outline: none;
-}
-
