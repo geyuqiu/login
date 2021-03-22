@@ -1,6 +1,7 @@
 import React from 'react';
 import './Article.css'
 import Header from './Header';
+import Password from './Password';
 
 function Article() {
 	return (
@@ -35,12 +36,7 @@ function Article() {
 						</select>
 					</div>
 				</div>
-				<div className="row justify-content-center">
-					<div className="col-6">
-						<input placeholder="Password" type="password" className="margin-bottom-5px"/>
-						<small className="gray">Minimum 8 characters</small>
-					</div>
-				</div>
+				<Password/>
 				<div className="row justify-content-center">
 					<div className="col-6">
 						<button className="margin-top-20px width-100-percent">Next</button>
