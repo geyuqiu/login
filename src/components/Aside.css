@@ -9,7 +9,8 @@ aside {
 	text-align: center;
 }
 
-.text-align-start {
+.paragraph {
 	text-align: start;
 	padding: 20px 100px;
+	line-height: 25px;
 }

@@ -6,11 +6,9 @@ function Aside() {
 	return (
 		<aside>
 			<h2 className="text-align-center">Dummy Heading</h2>
-			<p className="text-align-start">{loremIpsum({count: 3, units: 'sentences'})}</p>
+			<p className="paragraph">{loremIpsum({count: 2, units: 'sentences'})}</p>
 		</aside>
 	)
 }
 
 export default Aside;
-
-
