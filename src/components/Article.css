@@ -24,6 +24,17 @@ select {
 	padding: 15px 0px;
 }
 
+select:required:invalid {
+	color: gray;
+}
+
+option[value=""][disabled] {
+	display: none;
+}
+
+option {
+	color: black;
+}
 
 @-moz-document url-prefix() {
 	select {

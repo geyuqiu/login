@@ -28,7 +28,7 @@ function Article() {
 				</div>
 				<div className="row justify-content-center">
 					<div className="col-6">
-						<select>
+						<select required>
 							<option value="" disabled selected>I would describe emy user type as</option>
 							<option value="Developer">Developer</option>
 							<option value="Designer">Designer</option>
