@@ -5,6 +5,7 @@ import Password from './Password';
 import Input from './input';
 
 const emailAddressLegend = 'Email address';
+const nameLegend = 'Your name';
 function Article() {
 	return (
 		<article>
@@ -19,11 +20,7 @@ function Article() {
 						</p>
 					</div>
 				</div>
-				<div className="row justify-content-center">
-					<div className="col-6">
-						<input placeholder="Your name"/>
-					</div>
-				</div>
+				<Input legend={nameLegend}/>
 				<Input legend={emailAddressLegend}/>
 				<div className="row justify-content-center">
 					<div className="col-6">

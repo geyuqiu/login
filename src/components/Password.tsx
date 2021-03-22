@@ -18,7 +18,6 @@ function Password() {
 					{" "}
 					<input
 						placeholder="Password"
-						name="password"
 						className="margin-bottom-5px"
 						type={passwordShown ? "text" : "password"}
 					/>
