@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Form.css'
 import Password from './Password';
-import Input from './input';
+import Input from './Input';
 import Select from './Select';
 
 const emailAddressLegend = 'Email address';
