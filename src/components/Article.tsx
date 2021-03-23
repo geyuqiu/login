@@ -28,19 +28,14 @@ function Article() {
 	};
 
 	const [mailError, mailErrorChange] = useState(false);
-	const onMailErrorChange = (doesNotMatchPattern: boolean) => {
-		mailErrorChange(doesNotMatchPattern);
-	};
-
 	const [role, roleChange] = useState("");
-
 	const [password, passwordChange] = useState("");
 	const onPasswordChange = (event: any) => {
 		passwordChange(event.target.value);
 	};
 
 	const atLeastOneInvalid = () => {
-		const result = name && emailAddress && role && password ? false : true;
+		const result = name && emailAddress && !mailError && role && password ? false : true;
 		return result;
 	};
 
