@@ -21,6 +21,10 @@ function Article() {
 		result ? mailErrorChange(false) : mailErrorChange(true);
 	};
 
+	const validatePassword = (value: string) => {
+		value && value.length > 7 ? passwordErrorChange(false) : passwordErrorChange(true);
+	};
+
 	const onEmailAddressChange = (event: any) => {
 		const value = event.target.value;
 		emailAddressChange(value);
@@ -28,14 +32,17 @@ function Article() {
 	};
 
 	const [mailError, mailErrorChange] = useState(false);
+	const [passwordError, passwordErrorChange] = useState(false);
 	const [role, roleChange] = useState("");
 	const [password, passwordChange] = useState("");
 	const onPasswordChange = (event: any) => {
+		const value = event.target.value;
 		passwordChange(event.target.value);
+		validatePassword(value);
 	};
 
 	const atLeastOneInvalid = () => {
-		const result = name && emailAddress && !mailError && role && password ? false : true;
+		const result = name && emailAddress && !mailError && role && password && !passwordError ? false : true;
 		return result;
 	};
 
