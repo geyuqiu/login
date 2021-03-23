@@ -63,8 +63,8 @@ function Article() {
 				          value={password}
 				/>
 				<div className="row justify-content-center">
-					<div className="col-6">
-						<button className="margin-top-20px width-100-percent btn btn-primary"
+					<div className="col-6 margin-top-20px">
+						<button className="btn btn-primary"
 						        type="button"
 										disabled={atLeastOneInvalid()}
 						>Next</button>

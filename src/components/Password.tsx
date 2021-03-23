@@ -42,7 +42,9 @@ function Password(props: any) {
 									value={props.value}
 									type={passwordShown ? "text" : "password"}
 								/>
-								<i onClick={toggleVisibility}>{eye}</i>{" "}
+								<i onClick={toggleVisibility}
+									 className="top-25-percent"
+								>{eye}</i>{" "}
 							</>
 						)
 					}
