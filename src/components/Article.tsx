@@ -64,7 +64,7 @@ function Article() {
 				/>
 				<div className="row justify-content-center">
 					<div className="col-6 margin-top-20px">
-						<button className="btn btn-primary"
+						<button className={atLeastOneInvalid() ? "btn btn-light" : "btn btn-primary"}
 						        type="button"
 										disabled={atLeastOneInvalid()}
 						>Next</button>
