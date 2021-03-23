@@ -9,7 +9,7 @@ function Article() {
 			<div className="container-fluid">
 				<div className="row justify-content-center">
 					<div className="col-6">
-						<h2 className="margin-bottom-30px">Let's set up your account</h2>
+						<h2 className="margin-bottom-30px margin-top-60px">Let's set up your account</h2>
 						<p className="margin-bottom-30px">Already have an account?&nbsp;
 							<a href="">Sign in</a>
 						</p>

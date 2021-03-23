@@ -12,7 +12,7 @@ function Input(props: any) {
 			<div className="col-6">
 				{focus
 					? <fieldset className={props.mailError ? "margin-bottom-5px" : ""}>
-						<legend>{props.legend}</legend>
+						<legend className={props.mailError ? "red" : ""} >{props.legend}</legend>
 						<input autoFocus onBlur={toggleFocus} onChange={props.onChange}
 						       value={props.value}/>
 					</fieldset>

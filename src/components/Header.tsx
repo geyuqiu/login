@@ -3,7 +3,7 @@ import './Header.css'
 
 function Header() {
 	return (
-		<header className="text-align-right padding-20-px padding-right-48px">
+		<header className="text-align-right padding-20-px padding-right-48px margin-top-20px">
 			<h5>
 				Step 1 of 3
 				<span className="dot background-color-black"></span>
