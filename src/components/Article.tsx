@@ -3,6 +3,7 @@ import './Article.css'
 import Header from './Header';
 import Password from './Password';
 import Input from './input';
+import Select from './Select';
 
 const emailAddressLegend = 'Email address';
 const nameLegend = 'Your name';
@@ -69,15 +70,7 @@ function Article() {
 				       mailError={mailError}
 				       emailErrorMessage={emailErrorMessage}
 				/>
-				<div className="row justify-content-center">
-					<div className="col-6">
-						<select required value={role} onChange={e => roleChange(e.target.value)}>
-							<option value="" disabled selected>I would describe emy user type as</option>
-							<option value="Developer">Developer</option>
-							<option value="Designer">Designer</option>
-						</select>
-					</div>
-				</div>
+				<Select role={role} onChange={(e: any) => roleChange(e.target.value)}/>
 				<Password onChange={onPasswordChange}
 				          value={password}
 				/>
