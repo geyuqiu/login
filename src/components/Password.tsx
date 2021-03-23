@@ -6,7 +6,7 @@ import './Password.css'
 const eye = <FontAwesomeIcon icon={faEye}/>;
 
 const passwordLegend = "Password";
-function Password() {
+function Password(props: any) {
 	const [focus, onFocus] = useState(false);
 	const toggleFocus = () => {
 		onFocus(focus ? false : true);
@@ -26,6 +26,9 @@ function Password() {
 							<legend>{passwordLegend}</legend>
 							<input
 								autoFocus
+								onChange={props.onChange}
+								onBlur={toggleFocus}
+								value={props.value}
 								type={passwordShown ? "text" : "password"}
 							/>
 							<i onClick={toggleVisibility}>{eye}</i>{" "}
@@ -33,10 +36,11 @@ function Password() {
 						: (
 							<>
 								<input
-								placeholder={passwordLegend}
-								className="margin-bottom-5px"
-								onFocus={toggleFocus}
-								type={passwordShown ? "text" : "password"}
+									placeholder={passwordLegend}
+									className="margin-bottom-5px"
+									onFocus={toggleFocus}
+									value={props.value}
+									type={passwordShown ? "text" : "password"}
 								/>
 								<i onClick={toggleVisibility}>{eye}</i>{" "}
 							</>

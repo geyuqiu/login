@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Article.css'
 import Header from './Header';
 import Password from './Password';
@@ -7,6 +7,21 @@ import Input from './input';
 const emailAddressLegend = 'Email address';
 const nameLegend = 'Your name';
 function Article() {
+	const [name, nameChange] = useState("");
+	const onNameChange = (event: any) => {
+		nameChange(event.target.value);
+	};
+
+	const [emailAddress, emailAddressChange] = useState("");
+	const onEmailAddressChange = (event: any) => {
+		emailAddressChange(event.target.value);
+	};
+
+	const [password, passwordChange] = useState("");
+	const onPasswordChange = (event: any) => {
+		passwordChange(event.target.value);
+	};
+
 	return (
 		<article>
 			<Header/>
@@ -20,8 +35,14 @@ function Article() {
 						</p>
 					</div>
 				</div>
-				<Input legend={nameLegend}/>
-				<Input legend={emailAddressLegend}/>
+				<Input legend={nameLegend}
+				       onChange={onNameChange}
+				       value={name}
+				/>
+				<Input legend={emailAddressLegend}
+				       onChange={onEmailAddressChange}
+				       value={emailAddress}
+				/>
 				<div className="row justify-content-center">
 					<div className="col-6">
 						<select required>
@@ -31,7 +52,9 @@ function Article() {
 						</select>
 					</div>
 				</div>
-				<Password/>
+				<Password onChange={onPasswordChange}
+				          value={password}
+				/>
 				<div className="row justify-content-center">
 					<div className="col-6">
 						<button className="margin-top-20px width-100-percent btn btn-primary" type="button">Next</button>
