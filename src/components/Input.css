@@ -25,3 +25,11 @@ fieldset input {
 fieldset input:focus {
 	outline: none;
 }
+
+.red {
+	color: red;
+}
+
+.margin-bottom-15px {
+	margin-bottom: 15px;
+}

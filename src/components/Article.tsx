@@ -6,6 +6,7 @@ import Input from './input';
 
 const emailAddressLegend = 'Email address';
 const nameLegend = 'Your name';
+const emailErrorMessage = 'Please enter a valid email address';
 function Article() {
 	const [name, nameChange] = useState("");
 	const onNameChange = (event: any) => {
@@ -13,8 +14,22 @@ function Article() {
 	};
 
 	const [emailAddress, emailAddressChange] = useState("");
+
+	const validateMail = (value: any) => {
+		const pattern = /[a-zA-Z0-9]+[\.]?([a-zA-Z0-9]+)?[\@][a-z]{3,9}[\.][a-z]{2,5}/g;
+		const result = pattern.test(value);
+		result ? mailErrorChange(true) : mailErrorChange(false);
+	};
+
 	const onEmailAddressChange = (event: any) => {
-		emailAddressChange(event.target.value);
+		const value = event.target.value;
+		emailAddressChange(value);
+		validateMail(value);
+	};
+
+	const [mailError, mailErrorChange] = useState(false);
+	const onMailErrorChange = (doesNotMatchPattern: boolean) => {
+		mailErrorChange(doesNotMatchPattern);
 	};
 
 	const [role, roleChange] = useState("");
@@ -49,6 +64,8 @@ function Article() {
 				<Input legend={emailAddressLegend}
 				       onChange={onEmailAddressChange}
 				       value={emailAddress}
+				       mailError={mailError}
+				       emailErrorMessage={emailErrorMessage}
 				/>
 				<div className="row justify-content-center">
 					<div className="col-6">
