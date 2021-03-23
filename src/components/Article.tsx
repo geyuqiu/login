@@ -24,6 +24,11 @@ function Article() {
 		passwordChange(event.target.value);
 	};
 
+	const atLeastOneInvalid = () => {
+		const result = name && emailAddress && role && password ? false : true;
+		return result;
+	};
+
 	return (
 		<article>
 			<Header/>
@@ -59,7 +64,10 @@ function Article() {
 				/>
 				<div className="row justify-content-center">
 					<div className="col-6">
-						<button className="margin-top-20px width-100-percent btn btn-primary" type="button">Next</button>
+						<button className="margin-top-20px width-100-percent btn btn-primary"
+						        type="button"
+										disabled={atLeastOneInvalid()}
+						>Next</button>
 					</div>
 				</div>
 				<div className="row justify-content-center">
