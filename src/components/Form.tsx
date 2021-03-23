@@ -43,8 +43,9 @@ function Form() {
 	};
 
 	const atLeastOneInvalid = () => {
-		const result = name && emailAddress && !mailError && role && password && !passwordError ? false : true;
-		return result;
+		return name && emailAddress && !mailError && role && password && !passwordError
+			? false
+			: true;
 	};
 
 	return (
