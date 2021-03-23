@@ -24,3 +24,11 @@ main {
 .gray {
 	color: gray;
 }
+
+.margin-bottom-30px {
+	margin-bottom: 30px !important;
+}
+
+.margin-top-20px {
+	margin-top: 20px;
+}
