@@ -16,9 +16,9 @@ function Article() {
 	const [emailAddress, emailAddressChange] = useState("");
 
 	const validateMail = (value: any) => {
-		const pattern = /[a-zA-Z0-9]+[\.]?([a-zA-Z0-9]+)?[\@][a-z]{3,9}[\.][a-z]{2,5}/g;
+		const pattern = /^\S+@\S+\.\S+$/g;
 		const result = pattern.test(value);
-		result ? mailErrorChange(true) : mailErrorChange(false);
+		result ? mailErrorChange(false) : mailErrorChange(true);
 	};
 
 	const onEmailAddressChange = (event: any) => {
